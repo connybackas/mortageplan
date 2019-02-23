@@ -26,6 +26,11 @@ public class MortagePlan {
   */
   public static void main(String[] args) {
 
+    if(args.length == 0){
+      System.out.println("No arguments attached, exiting...");
+      System.exit(0);
+    }
+    
     Pattern namePattern = Pattern.compile("\\\"([^\\\"]*)\\\"|[A-Za-zäåöÄÅÖ]*\\s?[A-Za-zäåöÄÅÖ]*");
     Pattern digitPattern = Pattern.compile("\\d*\\.*\\d+");
 
