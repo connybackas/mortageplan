@@ -52,7 +52,6 @@ public class MortagePlan {
     } catch (FileNotFoundException ex) {
       System.out.println("Failed to open file " + args[0] +": "+ ex);
       Logger.getLogger(MortagePlan.class.getName()).log(Level.SEVERE, null, ex);
-      System.exit(0);
     }
   }
 }
